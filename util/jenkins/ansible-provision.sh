@@ -204,7 +204,6 @@ edx_platform_version: $edxapp_version
 forum_version: $forum_version
 notifier_version: $notifier_version
 XQUEUE_VERSION: $xqueue_version
-xserver_version: $xserver_version
 certs_version: $certs_version
 configuration_version: $configuration_version
 demo_version: $demo_version
@@ -297,9 +296,6 @@ EOF_PROFILING
 fi
 
 if [[ $edx_internal == "true" ]]; then
-    # if this isn't a public server add the github
-    # user and set edx_internal to True so that
-    # xserver is installed
     cat << EOF >> $extra_vars_file
 EDXAPP_PREVIEW_LMS_BASE: preview-${deploy_host}
 EDXAPP_LMS_BASE: ${deploy_host}
