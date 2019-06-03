@@ -351,14 +351,14 @@ JOURNALS_ECOMMERCE_API_URL: "{{ JOURNALS_ECOMMERCE_BASE_URL }}/api/v2/"
 JOURNALS_ECOMMERCE_JOURNALS_API_URL: "{{ JOURNALS_ECOMMERCE_BASE_URL }}/journal/api/v1"
 journals_create_demo_data: true
 
-REGISTRAR_URL_ROOT: "https://registrar-{{ EDXAPP_LMS_BASE }}"
-REGISTRAR_API_ROOT: "https://registrar-{{ EDXAPP_LMS_BASE }}/api"
-REGISTRAR_DISCOVERY_BASE_URL: "https://discovery-{{ EDXAPP_LMS_BASE }}"
-REGISTRAR_LMS_BASE_URL: "https://{{ EDXAPP_LMS_BASE }}"
-REGISTRAR_SOCIAL_AUTH_REDIRECT_IS_HTTPS: true
-
 DISCOVERY_URL_ROOT: "https://discovery-${deploy_host}"
 DISCOVERY_SOCIAL_AUTH_REDIRECT_IS_HTTPS: true
+
+REGISTRAR_URL_ROOT: "https://registrar-$(deploy_host}"
+REGISTRAR_API_ROOT: "https://registrar-$(deploy_host}/api"
+REGISTRAR_DISCOVERY_BASE_URL: "https://discovery-${deploy_host}"
+REGISTRAR_LMS_BASE_URL: "https://${deploy_host}"
+REGISTRAR_SOCIAL_AUTH_REDIRECT_IS_HTTPS: true
 
 credentials_create_demo_data: true
 CREDENTIALS_LMS_URL_ROOT: "https://${deploy_host}"
