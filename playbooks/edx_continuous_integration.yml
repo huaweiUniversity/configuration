@@ -21,7 +21,6 @@
     - mongo_3_2
     - { role: 'edxapp', celery_worker: True }
     - edxapp
-    - testcourses
     - role: redis
     - oraclejdk
     - elasticsearch
