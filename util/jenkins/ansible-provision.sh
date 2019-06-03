@@ -354,8 +354,8 @@ journals_create_demo_data: true
 DISCOVERY_URL_ROOT: "https://discovery-${deploy_host}"
 DISCOVERY_SOCIAL_AUTH_REDIRECT_IS_HTTPS: true
 
-REGISTRAR_URL_ROOT: "https://registrar-$(deploy_host}"
-REGISTRAR_API_ROOT: "https://registrar-$(deploy_host}/api"
+REGISTRAR_URL_ROOT: "https://registrar-${deploy_host}"
+REGISTRAR_API_ROOT: "https://registrar-${deploy_host}/api"
 REGISTRAR_DISCOVERY_BASE_URL: "https://discovery-${deploy_host}"
 REGISTRAR_LMS_BASE_URL: "https://${deploy_host}"
 REGISTRAR_SOCIAL_AUTH_REDIRECT_IS_HTTPS: true
