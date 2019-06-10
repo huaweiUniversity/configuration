@@ -2,14 +2,7 @@
 
 DOCKER_TLD: "edx"
 
-ECOMMERCE_DATABASES:
-  # rw user
-  default:
-    ENGINE: 'django.db.backends.mysql'
-    NAME: '{{ ECOMMERCE_DEFAULT_DB_NAME }}'
-    USER: 'ecomm001'
-    PASSWORD: 'password'
-    HOST: 'db.{{ DOCKER_TLD  }}'
-    PORT: '3306'
-    ATOMIC_REQUESTS: true
-    CONN_MAX_AGE: 60
+ECOMMERCE_DATABASE_HOST: 'edx.devstack.mysql'
+ECOMMERCE_MEMCACHE: ['edx.devstack.memcached:11211']
+ECOMMERCE_VERSION: "open-release/ficus.master"
+ECOMMERCE_DJANGO_SETTINGS_MODULE: "ecommerce.settings.devstack"

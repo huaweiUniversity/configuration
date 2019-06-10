@@ -35,3 +35,6 @@ edxapp_environment_extra:
   SELENIUM_BROWSER: 'firefox'
   SELENIUM_HOST: 'edx.devstack.firefox'
   SELENIUM_PORT: '4444'
+
+edx_platform_repo: "http://code.aliyun.com/edx/edx-platform.git"
+edx_platform_version: "open-release/ficus.master"
