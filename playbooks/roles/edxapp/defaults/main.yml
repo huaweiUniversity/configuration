@@ -1252,7 +1252,6 @@ sandbox_post_requirements:  "{{ edxapp_code_dir }}/requirements/edx-sandbox/post
 edxapp_requirements_files:
   - "{{ pre_requirements_file }}"
   - "{{ github_requirements_file }}"
-  - "{{ custom_requirements_file }}"
   - "{{ local_requirements_file }}"
   - "{{ base_requirements_file }}"
   - "{{ post_requirements_file }}"
@@ -1264,7 +1263,6 @@ edxapp_requirements_files:
 edxapp_requirements_with_github_urls:
   - "{{ pre_requirements_file }}"
   - "{{ github_requirements_file }}"
-  - "{{ custom_requirements_file }}"
   - "{{ base_requirements_file }}"
   - "{{ post_requirements_file }}"
   - "{{ paver_requirements_file }}"
